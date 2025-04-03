@@ -1,16 +1,13 @@
 name: "hello world"
 
 on:
-    push:
-        branches:
-            - master
-            - production
-
-
+  push:
+    branches:
+      - master
+      - production
 jobs:
-    hello_world:
-        runs-on: ubuntu-latest
-        steps:
-         -  name: print hello world
-            run: echo "hello, world" 
-        
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello world
+        run: echo "Hello, World!"
